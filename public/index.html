@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiles Estimator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="wrapper">
+         <div class="logo"><a href="#">TILES ESTIMATOR</a></div>
+         <input type="radio" name="slider" id="menu-btn" />
+         <input type="radio" name="slider" id="close-btn" />
+         <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"
+               ><i class="fas fa-times"></i
+            ></label>
+            <li><a href="#metresbody">Metres</a></li>
+            <li><a href="#metres-feet">Feet_Metres</a></li>
+            <li><a href="#feet-centimetres">Feet_Centimetres</a></li>
+         </ul>
+         <label for="menu-btn" class="btn menu-btn" id="btn2"
+            ><i class="fas fa-bars"></i
+         ></label>
+      </div>
+   </nav>
+    <div class="metresbody" id="metresbody">
+      <div class="F-DPC">
+        <h1 id="metres"><u>Metres</u></h1>
+
+        <h3>Enter the Area of Rooms</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number1Phase1"
+            placeholder="Enter the total length of walls"
+          />metres
+        </div>
+
+        <!-- <br> -->
+        <h3>Enter the Area of Tile</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number2Phase1"
+            placeholder="Enter the total length of walls"
+          />metres
+        </div>
+        <h3>RESULTS(1st Phase)</h3>
+        <h3 class="list" id="list0"></h3>
+        <!-- <li class="minus">Cash <span>-¢400</span> <button class="delete-btn">X</button> </li> -->
+
+        <button class="btn" onclick="metresPhase1(this)">Calculate</button>
+        <button class="btn1" onclick="metresPhase1clear(this)">Clear</button>
+
+        <h3>Enter the Quantity number of Tiles in a box</h3>
+        <input
+          type="text"
+          id="number3Phase1"
+          placeholder="Enter the total number of tiles in a box"
+        />
+        <h3 class="list1" id="list1"></h3>
+
+        <button class="btn" onclick="metresPhase1Box(this)">Calculate</button>
+        <button class="btn1" onclick="metresPhase1Boxclear(this)">Clear</button>
+      </div>
+
+      <!-- METRES --------------- FEET -->
+      <div class="F-DPC">
+        <h1 id="metres-feet"><u>Feet Metres</u></h1>
+
+        <h3>Enter the Area of Rooms</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number1Phase2"
+            placeholder="Enter the total length of walls"
+          />feet
+        </div>
+
+        <!-- <br> -->
+        <h3>Enter the Area of Tile</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number2Phase2"
+            placeholder="Enter the total length of walls"
+          />metres
+        </div>
+        <h3>RESULTS(1st Phase)</h3>
+        <h3 class="list2" id="list2"></h3>
+        <!-- <li class="minus">Cash <span>-¢400</span> <button class="delete-btn">X</button> </li> -->
+
+        <button class="btn" onclick="feetMetresPhase2(this)">Calculate</button>
+        <button class="btn1" onclick="feetMetresPhase2clear(this)">
+          Clear
+        </button>
+
+        <h3>Enter the Quantity number of Tiles in a box</h3>
+        <input
+          type="text"
+          id="number3Phase2"
+          placeholder="Enter the total number of tiles in a box"
+        />
+        <h3 class="list3" id="list3"></h3>
+
+        <button class="btn" onclick="feetMetresPhase2Box(this)">
+          Calculate
+        </button>
+        <button class="btn1" onclick="feetMetresPhase2Boxclear(this)">
+          Clear
+        </button>
+      </div>
+
+      <!-- CENTIMETRES ---------------------- FEET  -->
+      <div class="F-DPC">
+        <h1 id="feet-centimetres"><u>Feet Centimetres</u></h1>
+
+        <h3>Enter the Area of Rooms</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number1Phase3"
+            placeholder="Enter the total length of walls"
+          />feet
+        </div>
+
+        <!-- <br> -->
+        <h3>Enter the Area of Tile</h3>
+        <div class="input">
+          <input
+            type="text"
+            id="number2Phase3"
+            placeholder="Enter the total length of walls"
+          />centimetres
+        </div>
+        <h3>RESULTS(1st Phase)</h3>
+        <h3 class="list4" id="list4"></h3>
+        <!-- <li class="minus">Cash <span>-¢400</span> <button class="delete-btn">X</button> </li> -->
+
+        <button class="btn" onclick="feetCentimetresPhase3(this)">
+          Calculate
+        </button>
+        <button class="btn1" onclick="feetCentimetresPhase3clear(this)">Clear</button>
+
+        <h3>Enter the Quantity number of Tiles in a box</h3>
+        <input
+          type="text"
+          id="number3Phase3"
+          placeholder="Enter the total number of tiles in a box"
+        />
+        <h3 class="list5" id="list5" ></h3>
+
+        <button class="btn" onclick="feetCentimetresPhase3Box(this)">
+          Calculate
+        </button>
+        <button class="btn1" onclick="feetCentimetresPhase3Boxclear(this)">Clear</button>
+      </div>
+    </div>
+    <script src="index_tiles.js"></script>
+  </body>
+</html>
